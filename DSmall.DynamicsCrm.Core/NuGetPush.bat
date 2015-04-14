@@ -1,3 +1,3 @@
-..\..\NuGet\NuGet.exe pack ../DSmall.DynamicsCrm.Core.csproj -Build -symbols
+..\NuGet\NuGet.exe pack DSmall.DynamicsCrm.Core.csproj -Build -symbols
 
 pause
