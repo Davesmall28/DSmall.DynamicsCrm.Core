@@ -64,6 +64,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceProviderExtensions.cs" />
     <Compile Include="ServiceProviderInitializer.cs" />
+    <Compile Include="SpecificationFixture.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DSmall.DynamicsCrm.UnitTest.Core.nuspec" />
