@@ -1,0 +1,8 @@
+language: csharp
+solution: DSmall.DynamicsCrm.Core.sln
+install:
+  - nuget restore DSmall.DynamicsCrm.Core.sln
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release DSmall.DynamicsCrm.Core.sln
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./DSmall.DynamicsCrm.Core.UnitTest/bin/Release/DSmall.DynamicsCrm.Core.UnitTest.dll
