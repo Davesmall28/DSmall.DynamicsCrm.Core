@@ -8,11 +8,11 @@
     using Moq;
 
     /// <summary>The service provider initializer.</summary>
-    public class ServiceProviderInitializer
+    public static class ServiceProviderInitializer
     {
         /// <summary>The setup.</summary>
         /// <returns>The <see cref="IServiceProvider"/>.</returns>
-        public Mock<IServiceProvider> Setup()
+        public static Mock<IServiceProvider> Setup()
         {
             var mockPluginContext = SetupPluginContext();
             var mockOrganizationServiceFactory = SetupOrganizationServiceFactory();
@@ -23,7 +23,7 @@
 
         /// <summary>The setup organization service factory.</summary>
         /// <returns>The <see cref="Mock"/>.</returns>
-        public Mock<IOrganizationServiceFactory> SetupOrganizationServiceFactory()
+        public static Mock<IOrganizationServiceFactory> SetupOrganizationServiceFactory()
         {
             var mockOrganizationService = SetupOrganizationService();
             var mockOrganizationServiceFactory = new Mock<IOrganizationServiceFactory>();
@@ -37,7 +37,7 @@
 
         /// <summary>The setup plugin context.</summary>
         /// <returns>The <see cref="Mock"/>.</returns>
-        public Mock<IPluginExecutionContext> SetupPluginContext()
+        public static Mock<IPluginExecutionContext> SetupPluginContext()
         {
             var mockPluginContext = new Mock<IPluginExecutionContext>();
             mockPluginContext
