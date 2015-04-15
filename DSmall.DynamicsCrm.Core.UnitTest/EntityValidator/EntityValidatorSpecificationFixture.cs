@@ -19,9 +19,7 @@
         {
             UnderTest = new EntityValidator();
 
-            var serviceProviderInitializer = new ServiceProviderInitializer();
-            PluginContext = serviceProviderInitializer
-                .SetupPluginContext()
+            PluginContext = ServiceProviderInitializer.SetupPluginContext()
                 .WithInputParameters(GetTargetEntityCollection())
                 .WithPreEntityImages(GetPreImageEntityCollection())
                 .WithPostEntityImages(GetPostImageEntityCollection());
@@ -32,8 +30,7 @@
         {
             UnderTest = new EntityValidator();
 
-            PluginContext = new ServiceProviderInitializer()
-                .SetupPluginContext()
+            PluginContext = ServiceProviderInitializer.SetupPluginContext()
                 .WithPostEntityImages(new EntityImageCollection { { "PostImage", null } });
         }
 
