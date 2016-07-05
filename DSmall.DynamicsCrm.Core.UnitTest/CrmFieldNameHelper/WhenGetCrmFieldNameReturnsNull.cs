@@ -23,10 +23,9 @@
         /// <summary>The should throw invalid data exception.</summary>
         /// <exception cref="Exception">Invalid data exception</exception>
         [Test]
-        [ExpectedException(typeof(InvalidDataException))]
         public void ShouldThrowInvalidDataException()
         {
-            throw exceptionThrown;
+            Assert.Throws<InvalidDataException>(ThrowException);
         }
 
         /// <summary>The because of.</summary>
@@ -52,6 +51,11 @@
 
             testFixture = new CrmFieldNameHelperSpecificationFixture();
             testFixture.PerformTestSetup();
+        }
+
+        private void ThrowException()
+        {
+            throw exceptionThrown;
         }
     }
 }
