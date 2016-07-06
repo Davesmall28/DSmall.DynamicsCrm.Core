@@ -36,7 +36,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>bin\Debug-Net40\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -45,7 +45,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release-Net40|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>bin\Release-Net40\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -55,7 +55,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>bin\Debug-Net45\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -64,7 +64,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release-Net45|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>bin\Release-Net45\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -78,7 +78,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DSmall.Core">
-      <HintPath>..\packages\DSmall.Core.1.0.6\lib\net40\DSmall.Core.dll</HintPath>
+      <HintPath>..\packages\DSmall.Core.1.0.7\lib\net40\DSmall.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Crm.Sdk.Proxy">
@@ -125,11 +125,11 @@
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="AfterBuild" Condition="'$(Configuration)' == 'Release'">
-    <MSBuild Projects="..\DSmall.Core.sln" Properties="Configuration=Release-Net40" />
-    <MSBuild Projects="..\DSmall.Core.sln" Properties="Configuration=Release-Net45" />
+    <MSBuild Projects="..\DSmall.DynamicsCrm.Core.sln" Properties="Configuration=Release-Net40" />
+    <MSBuild Projects="..\DSmall.DynamicsCrm.Core.sln" Properties="Configuration=Release-Net45" />
   </Target>
   <Target Name="MyGetAfterBuild">
-    <MSBuild Projects="..\DSmall.Core.sln" Properties="Configuration=Release-Net40" />
-    <MSBuild Projects="..\DSmall.Core.sln" Properties="Configuration=Release-Net45" />
+    <MSBuild Projects="..\DSmall.DynamicsCrm.Core.sln" Properties="Configuration=Release-Net40" />
+    <MSBuild Projects="..\DSmall.DynamicsCrm.Core.sln" Properties="Configuration=Release-Net45" />
   </Target>
 </Project>

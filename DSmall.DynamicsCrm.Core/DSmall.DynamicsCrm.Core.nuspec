@@ -9,6 +9,6 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <copyright>Copyright $author$ 2016</copyright>
-    <tags>Microsoft Dynamics CRM 2011 SDK XRM</tags>
+    <tags>Microsoft Dynamics CRM 2011 2013 2015 2016 SDK XRM</tags>
   </metadata>
 </package>
