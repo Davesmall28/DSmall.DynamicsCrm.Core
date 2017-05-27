@@ -1,10 +1,10 @@
 language: csharp
-solution: DSmall.DynamicsCrm.Core.sln
+solution: Springboard365.Xrm.Core.sln
 install:
-  - nuget restore DSmall.DynamicsCrm.Core.sln
+  - nuget restore Springboard365.Xrm.Core.sln
   - nuget install NUnit.ConsoleRunner -Version 3.4.1 -OutputDirectory testrunner
 script:
-  - xbuild /p:Configuration=Release-Net40 DSmall.DynamicsCrm.Core.sln
-  - mono ./testrunner/NUnit.ConsoleRunner.3.4.1/tools/nunit3-console.exe ./DSmall.DynamicsCrm.Core.UnitTest/bin/Release-Net40/DSmall.DynamicsCrm.Core.UnitTest.dll
-  - xbuild /p:Configuration=Release-Net45 DSmall.DynamicsCrm.Core.sln
-  - mono ./testrunner/NUnit.ConsoleRunner.3.4.1/tools/nunit3-console.exe ./DSmall.DynamicsCrm.Core.UnitTest/bin/Release-Net45/DSmall.DynamicsCrm.Core.UnitTest.dll
+  - xbuild /p:Configuration=Release-Net40 Springboard365.Xrm.Core.sln
+  - mono ./testrunner/NUnit.ConsoleRunner.3.4.1/tools/nunit3-console.exe ./Springboard365.Xrm.Core.Test/bin/Release-Net40/Springboard365.Xrm.Core.Test.dll
+  - xbuild /p:Configuration=Release-Net45 Springboard365.Xrm.Core.sln
+  - mono ./testrunner/NUnit.ConsoleRunner.3.4.1/tools/nunit3-console.exe ./Springboard365.Xrm.Core.Test/bin/Release-Net45/Springboard365.Xrm.Core.Test.dll

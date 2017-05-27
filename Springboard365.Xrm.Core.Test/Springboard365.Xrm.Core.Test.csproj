@@ -84,16 +84,16 @@
       <HintPath>..\packages\Moq.4.2.1510.2205\lib\net40\Moq.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    <Reference Include="nunit.framework, Version=3.4.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.4.1\lib\net40\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Springboard365.Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=9fa79910cc859408, processorArchitecture=MSIL">
-      <HintPath>..\packages\Springboard365.Core.1.1.0-beta1\lib\net40\Springboard365.Core.dll</HintPath>
+      <HintPath>..\packages\Springboard365.Core.1.1.0\lib\net40\Springboard365.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Springboard365.UnitTest.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Springboard365.UnitTest.Core.1.0.0\lib\net40\Springboard365.UnitTest.Core.dll</HintPath>
+    <Reference Include="Springboard365.UnitTest.Core, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Springboard365.UnitTest.Core.1.1.0\lib\net40\Springboard365.UnitTest.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Springboard365.Xrm.UnitTest.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
