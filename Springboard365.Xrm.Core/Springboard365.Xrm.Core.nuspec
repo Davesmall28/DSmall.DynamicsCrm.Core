@@ -6,15 +6,10 @@
     <title>$title$</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
+    <license type="expression">Apache-2.0</license>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <copyright>Copyright $author$ 2017</copyright>
+    <copyright>Copyright $author$ 2020</copyright>
     <tags>Microsoft Dynamics CRM 2011 2013 2015 2016 SDK XRM 365</tags>
   </metadata>
-  <files>
-    <file src="bin\Release-Net40\*.dll" target="lib\net40" />
-    <file src="bin\Release-Net40\*.pdb" target="lib\net40" />
-    <file src="bin\Release-Net45\*.dll" target="lib\net45" />
-    <file src="bin\Release-Net45\*.pdb" target="lib\net45" />
-  </files>
 </package>
