@@ -4,7 +4,7 @@
     using Microsoft.Xrm.Sdk;
     using Moq;
     using Springboard365.Xrm.Core;
-    using Springboard365.Xrm.UnitTest.Core;
+    using Springboard365.UnitTest.Xrm.Core;
 
     public class EntityValidatorSpecificationFixture
     {

@@ -94,7 +94,7 @@
     <PackageReference Include="Springboard365.UnitTest.Core">
       <Version>2.0.0</Version>
     </PackageReference>
-    <PackageReference Include="Springboard365.Xrm.UnitTest.Core">
+    <PackageReference Include="Springboard365.UnitTest.Xrm.NUnit">
       <Version>2.0.0</Version>
     </PackageReference>
   </ItemGroup>
